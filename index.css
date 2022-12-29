@@ -35,7 +35,7 @@
   */
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 /*
     Typographic tweaks!
@@ -96,7 +96,7 @@ body {
   /* for this project only */
   display: grid;
   place-content: center;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 /* utilities */
@@ -157,6 +157,9 @@ body {
 }
 
 @media (min-width: 600px) {
+  body {
+    margin-block: 0;
+  }
   .product {
     --content-padding: 2rem;
     grid-template-columns: 1fr 1fr;
